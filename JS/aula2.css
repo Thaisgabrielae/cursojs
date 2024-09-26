@@ -1,0 +1,60 @@
+body{
+    background-color: #fff; /*cor do plano de fundo*/
+    color: #000; /*cor do texto*/
+}
+h2{ 
+    color: #444;
+    font-size: 46px; /*tamanho da fonte*/
+    text-decoration:underline; /* decoração do texto (sublinhado, etc) */    
+}
+.fonte-40px{
+    font-size: 40px;
+
+}
+
+
+
+/*
+ TEXT-ALIGN: (alinhar texto)
+    -center (centralizado)
+    -justify (justificado)
+
+ FONT-WEIGHT: (peso visual, impacto da fonte no texto)
+  NUMERAL
+  100 (fininha)
+  800 (forte-negrito)
+  NORMAL
+  bold:negrito
+ 
+  MARGIN: (margem - espaçamento externo)
+   -top (cima)
+   -right (direita)
+   -bottom (baixo)
+   -left (esquerda)
+   
+
+   BORDER: (borda)
+    -border-sizer (tamanho da borda)
+    -border-color (cor da borda)
+    -border-style (estilo da borda)
+
+    REPRESENTAÇÃO BORDER
+    solid, red, 2px
+
+TEXT-TRANSFORM: (transformar texto)
+    -uppercase: maiusculo
+    etc
+
+PADDING: (espaçamento interno)
+   -top (cima)
+   -right (direita)
+   -bottom (baixo)
+   -left (esquerda)
+   
+
+   REPRESENTAÇÃO PADDING OU MARGIN
+   (TOP, RIGHT, BOTTOM, LEFT)
+   10px, 10px, 10px, 10px (se for o mesmo valor não precisa por os 4, poderia ser somente padding/margin: 10px)
+   5px, 10px, 5px, 10px (se for o mesmo para cima e baixo e o mesmo para laterais colocar somente os 2 primeiros :5px, 10px) 
+   
+   /*comentario CSS*/
