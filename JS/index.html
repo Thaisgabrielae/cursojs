@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="widht=device-widht, initial-scale=1.0"/>
-        <title>Olá</title>
-        <style>
-            .primeiro-paragrafo{
-                color: blue;
-            }
-        </style>
-        
-    </head>
-    <body>
-        <!-- comentario -->
-        <h1  class="primeiro-paragrafo">Olá mundo!</h1> <!-- heading 1-->
-        <p class="primeiro-paragrafo">primeira linha</p> <!--paragraph -->
-        <br><!--break return - quebra de linha -->
-        <p>segunda linha</p>
-        <div><!-- divisor -->
-            Isso é um conteudo que pode ser isolado a qualquer momento
-            <button style="background-color:red" onclick="alert('Meu primeiro JS')">Ok</button> <!-- background-color (cor de fundo) onclick (ao clicar) (aviso, sempre colocar os () pra identificar a função e dentro do () colocar a mensagem (identificar texto) entre aspas simples 'texto aqui')-->
-        </div> 
-        <img 
-            src="imagem.jpg" 
-            alt="cachorro dentro do cesto" 
-            width="200px"
-        /> 
-            <!-- scr= source (origem) alt= alternative (alternativo) ou seja, quando não carregar a src aparece a alt -->
-            <!--widht (largura) height (altura)-->
-            <!--pixel (unidade de medida do navegador)-->
-               
-            <!-- TAG, ID, NAME E CLASS 
-                tag (body, h1, p)
-                id identificador unico, usar # antes no css
-                name [name=""]
-                class="" (no css identifica com . e o nome da class)
-            -->
-            </body>
+<head>
+    <meta charset="UTF-8">
+       <title>Meu site</title>
+       <link rel="stylesheet" href="estilo.css">
+       
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--navegador/menu-->
+                            
+             <!-- <a> ancora (fazer link entre o meu site e outro site)
+            target (onde o navegador deve ser carregado). BLANK (abrir em nova aba)-->
+        <a id="menu-sobre" class="item-menu" href="#sobre-nos">Sobre nós</a>
+        <a id="menu-contato" class="item-menu item-ativo" href="#contato">Contato</a>
+
+        <!-- ou assim pra ir pra abri outra pagina ao clicar
+              <a class="item-menu" href="sobre-nos.html">Sobre nós</a>
+        <a class="item-menu" href="contato.html">Contato</a> -->
+        </nav>
+    </header>
+    <section id="sobre-nos">
+        <h1>
+            Seja bem-vindo pessoinha ao meu site html  
+        </h1>
+    </section>
+   <section id="contato">
+        <h2 class="item-menu">
+        Aqui você verá o meu primeiro projeto com estilização e um menu bonito.
+         </h2>
+   </section>
+   <script type="text/javascript">
+   const menuSobre = document.getElementsById('menu-sobre');
+   const menuContato = document.querySelector('#menu-contato');
+
+   menuSobre.addEverntListener('click', function() {
+        menuSobre.classList.toggle('item-ativo');
+   });  
+
+   menuContato.addEverntListener('click', function(){
+        menuContato.classList.toggle('item-ativo');
+});
+</script>
+</body>
 </html>

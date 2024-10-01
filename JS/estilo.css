@@ -1,0 +1,44 @@
+:root{
+    --cor-preto:#191516;
+    --cor-branco:#fff;
+    --cor-vinho: #a60067;
+    --cor-azul-duvidoso: #6153cc;
+    --cor-azul-clarin: #e5f4e3;
+}
+
+body{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+/*
+.item-menu{
+    color: var(--cor-vinho)
+
+    :link (como quer que veja o link)
+    :active (momento em que clica no link)
+    :visited (depois que visita)
+    :hover (qnd passa o mouse em cima)
+}
+*/
+
+header nav a.item-menu{
+    color:var(--cor-branco);
+    text-decoration: none;
+    border: var(--cor-branco) 1px solid;
+    padding: 5px 10px; /*espacamento interno*/
+}
+
+header nav a.item-menu:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+header nav a.item-menu.item-ativo {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+section{
+    min-height: 500px; /*minimo de altura*/
+}
