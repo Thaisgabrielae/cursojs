@@ -32,16 +32,22 @@
          </h2>
    </section>
    <script type="text/javascript">
-   const menuSobre = document.getElementsById('menu-sobre');
-   const menuContato = document.querySelector('#menu-contato');
+        const menus = document.querySelectorAll('a.item-menu');
 
-   menuSobre.addEverntListener('click', function() {
-        menuSobre.classList.toggle('item-ativo');
-   });  
+   menus.forEach(function(menu) {
+        menu.addEventListener('click', function(event){
+            event.preventDefault() //impede o comportamento padrao do link
+            //remover aclass "item-ativo"
+            menus.forEach(function(item){
+                item.classList.remove('item-ativo');
+            })
 
-   menuContato.addEverntListener('click', function(){
-        menuContato.classList.toggle('item-ativo');
-});
+            menu.classList.add('item-ativo');
+            
+        })
+   })
+
+  
 </script>
 </body>
 </html>
