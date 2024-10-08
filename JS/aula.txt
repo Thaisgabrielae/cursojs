@@ -1,0 +1,65 @@
+JS
+
+console.log("Para juntar" + " dois textos e uma variavel: " + nome );
+console.log(`Para juntar dois textos e uma variavel: ${nome}`);
+console.log("Para juntar dois textos e uma variavel: %s", nome);
+
+//    %s   --- string (texto)
+//    %d   --- digit
+//    %o   --- object
+//    %i   --- int (especifico)
+
+
+/**
+ * Criem a tabuada do 8 no seguinte formato: numero x multiplicador = resultado
+ */
+const numero = 8;
+
+let multiplicador = 1;
+
+console.log(numero, "x", multiplicador, "=", numero * multiplicador++);
+console.log(numero, "x", multiplicador, "=", numero * multiplicador++);
+console.log("%d x %d = %d", numero, multiplicador, numero * multiplicador++);
+console.log(`${numero} x ${multiplicador} = ${numero * multiplicador++}`);
+
+
+
+
+
+// npm install readline-sync (lembrar de sempre colocar primeiro isso)
+const readline = require("readline-sync");
+
+const nome = readline.question("Qual o seu nome? ");
+const idade = readline.questionInt ('Qual a sua idade?')
+console.log(`O nome informado foi: ${nome} e a idade informada foi de ${idade} anos.`);`);
+
+QUESTION
+float - valor com decimal 1.5/3.4 (ponto flutuante)
+int - valores inteiros
+question - string (texto)
+
+
+
+
+
+
+const readline = require('readline-sync')
+
+const nome = readline.question('Qual o seu nome?')
+
+const nota1 = readline.questionFloat ('Qual a nota do 1 bimestre?');
+const nota2 = readline.questionFloat ('Qual a nota do 2 bimestre?');
+const nota3 = readline.questionFloat ('Qual a nota do 3 bimestre?');
+const nota4 = readline.questionFloat ('Qual a nota do 4 bimestre?');
+
+console.log(`A media final de ${nome} foi: ${(nota1 + nota2 + nota3 + nota4)/4}`);
+ 
+ou criar uma variavel
+
+const media = (nota1 + nota2 + nota3 + nota4) / 4;
+console.log(`A media final do aluno ${nome} foi de: ${media}`);
+
+
+console.log(`A media final do aluno ${nome} foi de: ${media.toFixed(2)}`);
+
+to.fixed (para fixar a quantidade de casa depois da virgula.)
